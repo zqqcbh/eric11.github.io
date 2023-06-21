@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于自我</title>
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <style>
+        body .shell-main-nav ul .nav-box {
+            left: 240px;
+        }
+
+        body .shell-main {
+            margin-bottom: 0;
+        }
+
+        body .shell-main-nav {
+            margin-bottom: 0;
+        }
+
+        header {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            background-image: linear-gradient(to bottom, #a1e6ff, #a1e6ff);
+            height: 700px;
+        }
+
+        header img {
+            width: 500px;
+            height: 500px;
+            position: relative;
+        }
+
+        header h2 {
+            font: 100 60px '';
+            margin-bottom: 20px;
+            font-family: font;
+            letter-spacing: 5px;
+            border-bottom: 2px solid rgb(134, 134, 118);
+            color: #ffffff;
+        }
+
+        header p {
+            font: 100 30px '';
+            letter-spacing: 5px;
+        }
+
+        .h-b {
+            display: flex;
+            justify-content: space-evenly;
+            width: 90%;
+
+        }
+
+        .h-b p {
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .h-b-l,
+        .h-b-r {
+            width: 20%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        /* ------------------------------------------------------------------ */
+        footer {
+            max-width: 1430px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            border: 1px rgba(0, 0, 0, 0.187) solid;
+            margin: 20px 0;
+        }
+
+        .left {
+            width: 70%;
+
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .left p {
+            text-align: left;
+            letter-spacing: 2px;
+            margin-top: 30px;
+            font: 600 25px '';
+            color: rgb(147, 145, 142);
+        }
+
+        .top {
+            margin: 30px 0;
+        }
+
+        .top table {
+            margin: 30px 0;
+            width: 100%;
+            border-collapse: collapse;
+            border: rgba(0, 0, 0, 0.216);
+        }
+
+        .top table td {
+            padding: 3px 10px;
+        }
+
+        .top table th {
+            background-color: rgb(248, 248, 248);
+        }
+
+        .left h2,
+        .right h2 {
+            font-size: 30px;
+            position: relative;
+            width: 100%;
+            /* height: 30px; */
+        }
+
+        .left h2::after,
+        .right h2::after {
+            content: '';
+            display: block;
+            position: absolute;
+            left: -20px;
+            background-color: rgb(100, 160, 240);
+            width: 15px;
+            height: 100%;
+            top: 0;
+        }
+
+        .right h2::after {
+            left: 0;
+        }
+
+        .right h2 {
+            padding: 0 20px;
+            font-size: 20px;
+        }
+
+        .left h2::before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 80%;
+            height: 2px;
+            right: 0;
+            top: 50%;
+            transform: translate(0, -50%);
+            background-color: rgba(0, 0, 0, 0.223)
+        }
+
+        .left span {
+            font-size: 15px;
+        }
+
+        .imgs {
+            width: 100%;
+            display: flex;
+        }
+
+        .imgs img {
+            width: 25%;
+        }
+
+        .right {
+            width: 25%;
+            padding: 10px;
+        }
+
+        .right img {
+            width: 100%;
+            margin: 30px 0;
+        }
+
+        .bottom {
+            position: sticky;
+            top: 20px;
+        }
+
+        .b {
+            width: 100%;
+            background-color: #fff;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            border: rgba(0, 0, 0, 0.216) 1px solid;
+        }
+        @media (max-width:1000px){
+            .h-b-r,.h-b-l,.right{
+                display: none;
+            }
+            .content{
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="shell">
+        <div class="shell-main">
+            <div class="shell-main-nav">
+                <div class="logo">
+                    <img src="./image/logo.jpg" alt="">
+                    <span>博客</span>
+                </div>
+                <ul>
+                    <li><a href="./index.html">主页</a></li>
+                    <li><a href="./Template.html">网页模板</a></li>
+                    <li><a href="./make.html">关于站长</a></li>
+                    <li><a href="./painter.html">杂记</a></li>
+                    <li><a href="./Login.html">登录</a></li>
+                    <div class="nav-box"></div>
+                </ul>
+            </div>
+        </div>
+        <header>
+            <h2>博客-关于自我</h2>
+            <!-- <p>只做最优质的产品</p> -->
+            <div class="h-b">
+                <div class="h-b-l">
+                    <div class="h-b-l-h">
+                        <p>热爱文学</p>
+                        <span>高中时期迷恋西欧古典小说以及一众魔幻主义文学</span>
+                    </div>
+                    <div class="h-b-l-b">
+                        <p>喜好运动</p>
+                        <span>掌握篮球滑板等技能</span>
+                    </div>
+                </div>
+                <img src="./image/网站设计.png" alt="">
+                <div class="h-b-r">
+                    <div class="h-b-r-h">
+                        <p>爱好编程</p>
+                        <span>掌握比较少数的几类汇编语言，目前仍在学习当中</span>
+                    </div>
+                    <div class="h-b-r-b">
+                        <p>时常摆烂</p>
+                        <span>一个值得重视的缺点</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <footer>
+            <div class="content">
+                <div class="left">
+                    <div class="top">
+                        <h2>简介：</h2>
+                        <span><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一个专注于前端开发的探索者！<br />
+                            　20年来没有拿得出手的成就，或许本站是我的第一个成就<br /> 　
+                            喜好探索一切关于美好的东西</span>
+                    </div>
+                    <div class="top">
+                        <h2>经历：</h2>
+                        <br><span>2020年，高一时受启发学习编程</span><br>
+                        <br><span>2021年，基本掌握我的第一门编程语言java</span><br>
+                        <br><span>2022年，加入大学的信息工程学院计算机专业</span>
+                    </div>
+                    <div class="top">
+                        <h2>关于喜欢的事物：</h2>
+                        <span>
+                            <br>
+                            我喜欢三月的花朵和四月的雨水，热烈而深沉一如我所经历的风风雨雨
+                            <br>
+
+                            <br> 偏爱文学是因为可以在书里到达另一个生命体并体味他的生活 <br>
+
+                            <br> 幸好，人生有离别。
+                            <br> 因相聚而幸福的人，离别是好，使那些相思的泪都化成甜美的水晶
+                            <br> 因相聚而痛苦的人，离别最好，雾散云消看见了开阔的蓝天。
+                            <br> 可以因缘离散，对处在苦难中的人，有时候正是生命的期待与盼望。
+                            <br>聚与散、幸福与悲哀、失望与希望，假如我们愿意品尝，样样都有滋味，样样都是生命中不可或缺的。
+
+                            
+                        </span>
+
+                    </div>
+                    <div class="top">
+                        
+                    </div>
+                    <div class="top">
+                        <h2>最近在读：</h2>
+                        <span>
+                            <br>
+                            <p> 源氏物语：</p>
+                            <br> 哀此东篱菊，当年共护持。今秋花上露，只湿一人衣。一花一木，故人相植。一思一念，今人成痴。
+                            <br>
+                            <br>
+                            <p> 神曲：</p>
+                            <br> 为什么要停下来？他们说什么不关你的事。让他们说去吧，你得紧跟着我，要坚定⾃⼰的信念，要像坚实的⾼塔，不要引暴风⽽倾斜。因他⼈的想法⽽远离⾃⼰的⼈是最令⼈感到可惜的，明⽩么？
+                            <br>
+                            <br>
+                            <p> 霍乱时期的爱情：</p>
+                            <br> 谁也没有料到这偶然的一瞥，引起了一场爱情大灾难，持续了半个世纪尚未结束。
+
+                             <br>    老年的光阴不是水平的激流，而是无底的地下蓄水池，记忆力就从那里排走了。<br>
+                            
+                                 
+                            <br>
+                            <br>
+                            昨晚，他写信时突然停下笔，最后看了她一眼，说：“请用一枝玫瑰纪念我。
+                        </span>
+                    </div>
+                    <div class="top">
+                        <h2>句子摘抄：</h2>
+                        <br>
+                        <p>心俞</p>
+                        <br> 横跨数十年，蛛丝马迹终于连成清晰的线，故事用两个篇章串联。
+                        <br>
+                        <br> 原来故事从始至终就不是被单纯地赋予伤感和遗恨，一切都带着血色的冷酷残忍，以生死作为筹码，再用别离来粉饰太平，逼得人走投无路、裂肺撕心。
+
+                        <br>
+                        <br>
+                        <p>红绫</p>
+                        <br> 火漆封存厚厚-沓的回忆，是昏霞消弭时最后一声哨音。
+                        <br> 枝丫疯长，火炉滚烫，烟雾在眼前漫.展，延伸到一条条留有脚印的胡同路上。
+                        <br> 我说，不知所云的时候最适合提笔，就像现在这样。
+                        <br> 在夏天的傍晚吹吹晚风，会有细碎的波光跳起亲吻你的脸庞。
+                        <br> 路上行人撑着伞，躲着尚有余温的太阳，
+                        <br> 而我倚靠着长椅，眼前是一望无际的余晖的长廊。
+                        <br>
+                        <br>
+                        <p>无邪夭夭</p>
+                        <br> 叶影纤纤，倾吐嫩绿，摇曳生凉。
+                        <br> 花茶清甜，且饮下阳的烂漫，光的飘香。轻罗小扇候着流萤，慵懒的卧在奶糖味软风中，浅浅吟唱夏之歌。
+                        <br>白瓷梅子汤，碎冰叮当响;玻璃柠檬露，气泡咕嘟冒。
+                        <br> 午后沁满了落肩的发香，朦胧星眼，悄言夏长。
+                        <br>
+                        <br>
+                        <p>余秋雨</p>
+                        <br> 沧海滴水，何问其源？来自无限，归于无限。
+                        <br> 登高一呼，山鸣谷应；举目四望，海阔天空。
+                        <br>大智不群，大善无帮，何惧孤步，何惧毁谤。
+                        <br> 堂皇转眼凋零，喧腾是短命的别名。在流光溢彩的日子里，生命被铸上妖冶的印记。
+                        </span>
+                    </div>
+                    <div class="top">
+                        <h2>推荐书籍：</h2>
+                        <span>
+                            <br>
+                            <p>夏摩山谷</p>
+                            <br> 活着时，我们会发生错觉，以为时间无限长，
+                            可以拖拉着、半死不活地蒙混过关。以为自己不会死去，
+                            身边的人也是不死的。好像置身于一个有弹性的无限封闭的容器里，无法触及到边界
+                            ，所以麻木不仁，什么都看不见。直到某个时刻降临一切戛然而止，人被无常撕裂的速度快如闪电。
+                            <br>
+                            <br>
+                            <p>百年孤独</p>
+                            <br>  在一道清醒的电光中，他意识到自己的心灵承载不起这么多往事的负重，
+                            他被自己和他人的回忆纠缠如同致命的长毛刺穿心房，不禁羡慕凋零玫瑰间横斜的蜘蛛网如此沉着，
+                            杂草毒麦如此坚韧，二月清晨的明亮空气如此从容。
+                            <br>
+                            <br>
+                            <p>被窝是青春的坟墓</p>
+                            <br> 我们要有最朴素的生活，与最遥远的梦想。 即使明日天寒地冻，路远马亡。
+
+
+                            <br>
+                            <br>
+                            <p>红与黑</p>
+                            <br> 我如此艰难地穿越这片充斥着平庸的灼热沙漠，
+                            却要拒绝能够解除我的干渴的一泓清泉!真的，别这么傻了;在人们称为生活的这片自私自利的沙漠里，人人为自己。
+                            <br>
+                            <br>
+                            <p>诡秘之主</p>
+                            <br> 所有命运的馈赠，早已在暗中标注好了价格
+                            <br>
+                            <br> 奇迹只是一时，命运总是漫长
+                        </span>
+                    </div>
+                </div>
+                <div class="right">
+                    
+                    <div class="bottom">
+                        <h2>制作流程：</h2>
+                        <br>
+                        <span>
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;⼀、确定⽹站主题
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;⼆、搜集材料
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;三、规划⽹站
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;四、选择合适的制作⼯具
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;五、制作⽹页
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;六、上传测试
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;
+                        </span>
+                        <img src="./image/网页设计布局.png" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+        </footer>
+        <div class="shell-main-footer">
+            <span>欢迎访问-博客</span>
+        </div>
+    </div>
+
+</body>
+
+</html>
